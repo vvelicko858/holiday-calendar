@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Календарь</title>
+    <link href="../libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="../assets/img/icon.png" type="image/x-icon">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+
+
+
+
+    <div id='preloader'>
+        <img src="../assets/video/preloader.gif" alt="preloader">
+    </div>
+
+
+    <header class="header">
+        <div class="header-logo">
+            <div class="container">
+                <span class="header-logo__title">Календарь праздников</span>
+            </div>
+        </div>
+        <div class="header-menu">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse" id="navbar-top">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active "><a href="../index.html">Главная</a></li>
+                            <li><a href="../index.html">Календарь</a></li>
+                            <li><a href="../news.html">Новости </a></li>
+                            <li><a href="#sear">Поиск</a></li>
+                        </ul>
+
+
+
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <main class=" main col-lg-9 col-lg-push-3 coll-md-8 coll-push-4">
+
+                <section class="site-search panel panel-info hidden-lg">
+                    <div class="panel-heading">Поиск</div>
+                    <div class="panel-body">
+                        <form action="search">
+
+                            <div class="input-group input-group-lg">
+                                <input class="form-control" type="search" placeholder="Пойск по сайту">
+                                <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                                </span>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+
+                <section class="user-login panel panel-info hidden-lg">
+                    <div class="panel-heading">Пользователь </div>
+                    <div class="panel-body">
+
+                        <div>
+
+                            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab">
+                                        <span class="glyphicon glyphicon-log-in"></span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab">
+                                        <span class="glyphicon glyphicon-user"></span>
+
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-login__content tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+
+                                    <form action="login">
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="text" placeholder="Логин">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="password" placeholder="Пароль">
+
+                                        </div>
+                                        <button class="btn btn-default btn-lg btn-block">Вход</button>
+                                    </form>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                                    <form action="registration">
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="text" placeholder="Логин">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="password" placeholder="Пароль">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="email" placeholder="Email">
+
+                                        </div>
+
+
+
+                                        <button class="btn btn-default btn-lg btn-block">Регистрация</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="holid">
+                    <div class="holid-body">
+                        <h2 class="information-title">Праздник труда в Беларуси</h2>
+                        <p class="information-body">
+                            1 мая в Республике Беларусь отмечается Праздник труда, который является общереспубликанским праздничным днём. Он установлен Указом Президента страны № 157 от 26 марта 1998 года и имеет более чем вековую историю. </p>
+                        <p class="information-body">
+
+                            Долгое время 1 мая отмечался как День международной солидарности трудящихся. Первомай стал символом революции, непримиримой классовой борьбы, имел политическую окраску и отмечался демонстрациями, украшенными портретами политических деятелей, передовиков
+                            производства, лозунгами, призывами, плакатами и диаграммами о достижениях в той или иной отрасли народного хозяйства, науки, культуры. Но постепенно этот контекст терялся. Сегодня праздник отмечается в 142 странах и территориях
+                            мира 1 мая или в первый понедельник мая. Для ряда стран традиция собирать людей под знамена профсоюзов еще сохранилась, но в большинстве государств это все же не политический праздник, а именно День труда – яркий весенний праздник
+                            с народными гуляниями, выступлениями популярных артистов, ярмарками, мирными шествиями и множеством увеселительных мероприятий. А для кого-то это просто еще один выходной, в течение которого можно отдохнуть или провести время
+                            с семьей.</p>
+                        <p class="information-body">
+                            История Первого мая берет начало с античных времен. В это время жители древнего Рима превозносили богинь плодородия и растительного мира – Майю и Флору. Подобные празднества проводились у большинства народов мира и конечно ничего общего с трудящимися
+                            и профсоюзами не могли иметь.</p>
+                        <p class="information-body">
+                            Свою современную трактовку, как уже отмечалось, праздник получил в 1886 году, после того, как в Чикаго прошли крупные митинги рабочих. Митингующие потребовали установить восьмичасовой рабочий день, в результате чего началась потасовка с полицейскими.
+                            Огромное количество демонстрантов было арестовано, а семеро участников приговорены к смертной казни.</p>
+                        <p class="information-body">
+                            Летом 1889 года парижский конгресс принял предложение об организации ежегодных первомайских демонстраций. Подобная мера стала символом солидарности с рабочими из Чикаго. Через год праздничные митинги прошли во многих странах мира.</p>
+                        <p class="information-body">
+                            Первая сходка рабочих в России состоялась в Петербурге в 1891 году. За ее организацию отвечал революционер Михаил Бруснев и социал-демократы. Первая трактовка праздника называлась "маёвка". Рабочие уезжали за город на пикники, проводили политические дебаты
+                            и гуляли до утра.</p>
+                        <p class="information-body">
+                            Свой законный статус праздник получил после Октябрьской революции в 1918 году. В Трудовом кодексе появился "День международной солидарности трудящихся". Это событие подтолкнуло рабочих к организации демонстраций и шествий в больших городах при участии
+                            военных, музыкантов и физкультурников.</p>
+                        <p class="information-body">
+                            Первая телевизионная трансляция Первомайского парада на Красной площади в Москве прошла в 1956 году. День международной солидарности трудящихся долгое время входил в список важнейших государственных праздников СССР, но после распада Советского Союза потерял
+                            свой первоначальный смысл и стал называться Праздником Весны и Труда.</p>
+                        <p class="information-body">
+                            Основными Первомайскими традициями являются демонстрации, митинги и парады. В этот день профсоюзы проводят маевки, чествования людей труда и трудовых династий, велопробеги, легкоатлетические кроссы, конкурсы детского рисунка, тематические выставки, посещают
+                            ветеранов профсоюзного движения. 1 мая начинаются масштабные гулянья и ярмарки в городских парках развлечений: наступает пора аттракционов и дружеских пикников.
+                        </p>
+                    </div>
+
+                    <div class="photo">
+                        <div class="photo-item">
+                            <img class="photo-item__img" src="../assets/img/01.05.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </main>
+            <aside class="left-sidebar col-lg-3 col-lg-pull-9 coll-md-4 coll-pull-8">
+
+
+                <div id="carousel-example-generic" class="carousel slide vertical-slider hidden-xs hidden-md hidden-sm" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="vertical-slider__image" src="../assets/img/0105.jpg" alt="...">
+
+                        </div>
+
+
+                        <div class="item">
+                            <img class="vertical-slider__image" src="../assets/img/01051.jpg" alt="...">
+
+                        </div>
+
+                        <div class="item">
+                            <img class="vertical-slider__image" src="../assets/img/01052.jpg" alt="..." height="">
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+
+
+                <div class="site-search panel panel-info hidden-xs hidden-sm hidden-md" id="sear">
+                    <div class="panel-heading">Поиск</div>
+                    <div class="panel-body">
+                        <form action="search">
+
+                            <div class="input-group input-group-lg">
+                                <input class="form-control" type="search" placeholder="Пойск по сайту">
+                                <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                                </span>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user-login panel panel-info hidden-xs hidden-sm hidden-md">
+                    <div class="panel-heading">Пользователь </div>
+                    <div class="panel-body">
+
+                        <div>
+
+                            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#user-login-sidebar" aria-controls="user-login-sidebar" role="tab" data-toggle="tab">
+                                        <span class="glyphicon glyphicon-log-in"></span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab">
+                                        <span class="glyphicon glyphicon-user"></span>
+
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-login__content tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="user-login-sidebar">
+
+                                    <form action="login">
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="text" placeholder="Логин">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="password" placeholder="Пароль">
+
+                                        </div>
+                                        <button class="btn btn-default btn-lg btn-block">Вход</button>
+                                    </form>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="user-registration-sidebar">
+                                    <form action="registration">
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="text" placeholder="Логин">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="password" placeholder="Пароль">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="email" placeholder="Email">
+
+                                        </div>
+
+
+
+                                        <button class="btn btn-default btn-lg btn-block">Регистрация</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </aside>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="footer-top">
+
+                            <div class="footer-first col-md-3 col-xs-6">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                                    <li><a href="#">Eos neque, eius.</a></li>
+                                    <li><a href="#">Minus, omnis vel.</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-second col-md-3 col-xs-6">
+                                <h4>Voluptatem, commodi, at.</h4>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                                    <li><a href="#">Eos neque, eius.</a></li>
+                                    <li><a href="#">Minus, omnis vel.</a></li>
+                                    <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-third col-md-3 col-xs-6">
+                                <h4>Sed, ducimus perspiciatis.</h4>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                                    <li><a href="#">Eos neque, eius.</a></li>
+                                    <li><a href="#">Minus, omnis vel.</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-fourth col-md-3 col-xs-6">
+                                <h4>Reiciendis, minima, a?</h4>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                                    <li><a href="#">Delectus, labore, incidunt.</a></li>
+                                    <li><a href="#">Eos neque, eius.</a></li>
+                                    <li><a href="#">Minus, omnis vel.</a></li>
+                                    <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="footer-bottom">
+
+                            <div class="footer-fifth col-xs-12">
+                                <strong><a href="https://github.com/vvelicko858">Разработка - Величко Иван</a></strong>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
